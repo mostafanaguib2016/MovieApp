@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/personsFragment">
+
+    <fragment
+        android:id="@+id/personsFragment"
+        android:name="com.example.movieapp.ui.posters.PostersFragment"
+        android:label="PostersFragment"
+        tools:layout="@layout/fragment_persons"
+        />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.movieapp.ui.details.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details"
+        />
+    <fragment
+        android:id="@+id/showPhotoFragment"
+        android:name="com.example.movieapp.ui.details.ShowPhotoFragment"
+        android:label="ShowPhotoFragment"
+        tools:layout="@layout/fragment_show_photo"
+        />
+
+</navigation>
